@@ -67,3 +67,7 @@ apos.define('apostrophe-rich-text-widgets-editor', {
 
   }
 });
+
+apos.define('apostrophe-tiptap-widgets-editor', {
+  extend: 'apostrophe-rich-text-widgets-editor'
+});
