@@ -13,6 +13,11 @@
     var richText = apos.modules['apostrophe-rich-text-widgets'];
     return richText.play(window.$(el), data, options);
   };
+
+  apos.utils.widgetPlayers['apostrophe-tiptap'] = function(el, data, options) {
+    var richText = apos.modules['apostrophe-tiptap-widgets'];
+    return richText.play(window.$(el), data, options);
+  };
 })();
 
 apos.define('apostrophe-rich-text-widgets-editor', {
@@ -186,4 +191,8 @@ apos.define('apostrophe-rich-text-widgets-editor', {
     };
 
   }
+});
+
+apos.define('apostrophe-tiptap-widgets-editor', {
+  extend: 'apostrophe-rich-text-widgets-editor'
 });
